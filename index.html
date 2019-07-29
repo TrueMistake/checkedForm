@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-right">
+        <form class="forma-grid" id="forma" onsubmit="sendForm(this); return false;">
+            <div class="forma-grid__left">
+                <div class="forma-grid__left-title">Контактные данные</div>
+                <div class="forma-grid__wrap form-name">
+                    <div class="forma-title">Тебя зовут <span>*</span></div>
+                    <label class="forma-label forma-label--name">
+                        <input type="text" class="forma-input reset" name="name" placeholder="Иван Иванов" data-validate>
+                    </label>
+                </div>
+                <div class="forma-grid__wrap form-phone">
+                    <div class="forma-title">Контактный телефон <span>*</span></div>
+                    <label class="forma-label forma-label--phone">
+                        <input type="text" class="forma-input reset forma-phone" name="phone" placeholder="+7 495 000-00-00" data-validate>
+                    </label>
+                </div>
+                <div class="forma-grid__wrap form-email">
+                    <div class="forma-title">E-mail <span>*</span></div>
+                    <label class="forma-label forma-label--email">
+                        <input type="email" class="forma-input reset" name="email" placeholder="name@domain.ru" data-validate>
+                    </label>
+                </div>
+                <div class="forma-grid__wrap">
+                    <label class="forma-label consent">
+                        <input type="checkbox" id="formCheck" required/>
+                        <div class="consent-text">Нажимая на кнопку «Название кнопки», я даю
+                            согласие на обработку <a href="#" class="consent-text__link">персональных данных</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="forma-grid__wrap next-step">
+                    <input type="submit" class="next-step__link btn btn-line" value="Продолжить заполнение анкеты">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
